@@ -1,4 +1,3 @@
-import { DEFAULT_LANG, DATE_LANGS } from './CalendarLangs';
 import { MonthCalendar } from './MonthCalendar';
 import { Calendar } from './Calendar';
 

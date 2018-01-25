@@ -1,7 +1,6 @@
 import { WeekCalendar } from "./WeekCalendar";
 import { MonthCalendar } from "./MonthCalendar";
 import { DayCalendar } from "./DayCalendar";
-import { DatesCalendar } from "./DatesCalendar";
 
 export class Calendar {
 

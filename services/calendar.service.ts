@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { DayCalendar } from '../class/DayCalendar';
 
 @Injectable()
-export class CalendarService {
+export class PmIonCalendarService {
 
     private actions_date_selected: Function[] = [];
 

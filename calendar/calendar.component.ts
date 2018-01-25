@@ -6,7 +6,7 @@ import { DATE_LANGS, DEFAULT_LANG } from '../class/CalendarLangs';
   selector: 'pm-ion-calendar',
   templateUrl: './calendar.component.html'
 })
-export class CalendarComponent implements OnInit {
+export class PmIonCalendarComponent implements OnInit {
 
     @Input() datestart: Date;
     @Input() dateend: Date;

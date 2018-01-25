@@ -1,23 +1,23 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { CalendarComponent } from './calendar/calendar.component';
+import { PmIonCalendarComponent } from './calendar/calendar.component';
 import { WeekComponent } from './week/week.component';
-import { CalendarService } from './services/calendar.service';
+import { PmIonCalendarService } from './services/calendar.service';
 import { DayComponent } from './day/day.component';
 
 @NgModule({
-  imports: [
-    CommonModule
-  ],
-  declarations: [
-      CalendarComponent,
-      WeekComponent,
-      DayComponent
-  ],
-  exports: [
-      CalendarComponent
-  ],
-  providers: [CalendarService]
+    imports: [
+        CommonModule
+    ],
+    declarations: [
+        PmIonCalendarComponent,
+        WeekComponent,
+        DayComponent
+    ],
+    exports: [
+        PmIonCalendarComponent
+    ],
+    providers: [PmIonCalendarService]
 })
 export class PmCalendarModule { }

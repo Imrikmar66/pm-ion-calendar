@@ -3,10 +3,10 @@ This is an editable module to include directly in src/app :
 
 ## Installation
 - npm install pm-calendar
-- Moove the folder ./nodes_modules/pm-calendar to ./src/app
+- Moove the folder ./nodes_modules/pm-calendar to ./src
 - Import PmCalendarModule in app.module.ts : 
 ```typescript
-import { PmCalendarModule } from './pm-calendar/pm-calendar.module';
+import { PmCalendarModule } from '../pm-calendar/pm-calendar.module';
 //...
 //...
 @NgModule({
@@ -28,7 +28,7 @@ import { PmCalendarModule } from './pm-calendar/pm-calendar.module';
 
 The component model is : 
 ```html
-<app-calendar [datestart]="datestart" [dateend]="dateend" ></app-calendar>
+<pm-ion-calendar [datestart]="datestart" [dateend]="dateend" ></pm-ion-calendar>
 ```
 #### Paramètres : 
 - datestart: Date - First month's date to display
@@ -44,7 +44,7 @@ You can use the CalendarService to access calendar's events :
 import { CalendarService } from './pm-calendar/services/calendar.service';
 //...
 //...
-constructor( private calendarService: CalendarService ){ //...
+constructor( private calendarService: PmIonCalendarService ){ //...
 ```
 #### Available event : 
 
@@ -54,7 +54,7 @@ import { CalendarService } from './pm-calendar/services/calendar.service';
 import { DayCalendar } from './pm-calendar/class/DayCalendar';
 //...
 //...
-constructor( private calendarService: CalendarService ){
+constructor( private calendarService: PmIonCalendarService ){
 	this.calendarService.onDateSelected( ( day: DayCalendar ) => {
 	    console.log( day );
 	});
@@ -91,9 +91,9 @@ ngOnDestroy(){
 
 All styles are editables :
 
-- ./calendar/component.calendar.css
-- ./calendar/component.week.css
-- ./calendar/component.day.css // File for style the class managed via day.addClass / day.removeCass ...ect.
+- ./calendar/calendar.component.css
+- ./calendar/week.component.css
+- ./calendar/day.component.css // File for style the class managed via day.addClass / day.removeCass ...ect.
 
 Care, much css styles are here for the calendar's table aspect :
 ```css

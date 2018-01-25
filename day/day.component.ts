@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { CalendarService } from '../services/calendar.service';
+import { PmIonCalendarService } from '../services/calendar.service';
 import { DayCalendar } from '../class/DayCalendar';
 
 @Component({
@@ -10,7 +10,7 @@ export class DayComponent {
 
     @Input() day: Date;
 
-    constructor( private calendarService:CalendarService ){}
+    constructor( private calendarService: PmIonCalendarService ){}
     
     dayClicked(day: DayCalendar){
         this.calendarService.triggerDaySelect( day );
