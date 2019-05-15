@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { DayCalendar } from '../class/DayCalendar';
+import { DayCalendar } from './class/DayCalendar';
 
 @Injectable()
 export class PmIonCalendarService {

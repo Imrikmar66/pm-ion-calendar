@@ -1,10 +1,11 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { DatesCalendar } from '../class/DatesCalendar';
-import { DATE_LANGS, DEFAULT_LANG } from '../class/CalendarLangs';
+import { DatesCalendar } from './class/DatesCalendar';
+import { DATE_LANGS, DEFAULT_LANG } from './class/CalendarLangs';
 
 @Component({
   selector: 'pm-ion-calendar',
-  templateUrl: './calendar.component.html'
+  templateUrl: './pm-ion-calendar.component.html',
+  styleUrls: ['./pm-ion-calendar.component.scss']
 })
 export class PmIonCalendarComponent implements OnInit {
 

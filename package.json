@@ -1,19 +1,18 @@
 {
-  "name": "pm-ion-calendar",
-  "version": "1.0.1",
-  "description": "A calendar for ionic (based on pm-calendar)",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "*"
-  },
-  "keywords": [
-    "Ionic",
-    "Calendar"
-  ],
-  "author": "Pierre Mar <pierre.mar.66000@gmail.com> (https://github.com/Imrikmar66/)",
-  "license": "ISC"
+    "name": "pm-ion-calendar",
+    "version": "1.1.0",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/Imrikmar66/pm-ion-calendar"
+    },
+    "keywords": [
+      "Ionic",
+      "Calendar"
+    ],
+    "author": "Pierre Mar <pierre.mar.66000@gmail.com> (https://github.com/Imrikmar66/)",
+    "license": "ISC",
+    "peerDependencies": {
+      "@angular/common": "^7.2.0",
+      "@angular/core": "^7.2.0"
+    }
 }
